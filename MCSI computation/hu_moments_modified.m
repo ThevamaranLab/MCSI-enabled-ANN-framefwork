@@ -1,6 +1,6 @@
 % The skeleton of the code was taken from Mathworks.inc but there are several mistakes in that code, including mistakes in formula itself.
 % The errors were corrected and code was further improved (made more efficient and robust for further analysis).
-% Tejas K
+% Bhanu %(Credits:Tejas K)
 % Jan 2018
 
 
