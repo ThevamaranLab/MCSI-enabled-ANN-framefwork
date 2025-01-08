@@ -1,7 +1,6 @@
 %% Code for generating 1st order fractal arrays.
  
- % Creat square space (5000 x 5000) unit^2
-
+% To Create square space (2L x 2L) unit^2
 figure(1)
 
 L = 2500;
