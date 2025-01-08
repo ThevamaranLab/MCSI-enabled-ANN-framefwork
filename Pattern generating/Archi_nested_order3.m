@@ -1,4 +1,5 @@
-
+% For 3rd order fractal arrays
+% To Create square space (2L x 2L) unit^2
 L = 2500;
 
 %xs = [-L L L -L];
