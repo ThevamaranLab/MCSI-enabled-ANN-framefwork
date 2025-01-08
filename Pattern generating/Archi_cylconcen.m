@@ -1,10 +1,12 @@
- % Creat square space
+%% Code for generating cylindrical and concentric cylnder patterns.
+ 
+ % Creat square space (5000 x 5000) unit^2
 
  clear all
  figure
 
 
-L = 2500;
+L = 2500; %units
 
 %xs = [-L L L -L];
 %ys = [L L -L -L];
@@ -19,9 +21,10 @@ axis off
 n =1; %order
 d1 = 200; %inner most diameter 
 r1 = d1/2;
-g_cc = 0; %intr
-g =200;
-t = 100; d1_e = d1 +2*t; r1_e = d1_e/2;
+g_cc = 0; %intra cylinder gap
+g =200; inter cylinder gap
+t = 100; % Cylinder thickness
+d1_e = d1 +2*t; r1_e = d1_e/2; % 
 radius_vec = r1*ones(1,2*n);
 colors_cell = cell(size(radius_vec));
 
