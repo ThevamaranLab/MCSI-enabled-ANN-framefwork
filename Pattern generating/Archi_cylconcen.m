@@ -1,11 +1,9 @@
 %% Code for generating cylindrical and concentric cylnder patterns.
  
- % Creat square space (5000 x 5000) unit^2
-
  clear all
  figure
 
-
+% To Create square space (2L x 2L) unit^2
 L = 2500; %units
 
 %xs = [-L L L -L];
