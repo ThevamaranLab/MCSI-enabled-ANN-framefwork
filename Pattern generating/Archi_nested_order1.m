@@ -1,3 +1,6 @@
+%% Code for generating 1st order fractal arrays.
+ 
+ % Creat square space (5000 x 5000) unit^2
 
 figure(1)
 
@@ -10,8 +13,8 @@ axis equal
 hold on
 axis off
 
-d1 = 25; 
-t = 5; 
+d1 = 25; %inner diamater of inner cylinder
+t = 5; % thickness of the cylinder
 
 r1 = d1/2; 
 
@@ -22,7 +25,7 @@ d1_e = 2*r1_e;
 radius1 = [r1+t, r1];
 radius2 = [3*r1+4*t, 3*r1+3*t];
 u = 0: pi/50:2*pi;
-g = 0;
+g = 0; %Always zero
 r2_e = 3*r1+4*t; 
 d2_e = 2*r2_e;
 
