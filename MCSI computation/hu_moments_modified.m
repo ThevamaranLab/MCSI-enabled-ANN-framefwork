@@ -1,6 +1,5 @@
-% The skeleton of the code was taken from Mathworks.inc but there are several mistakes in that code, including mistakes in formula itself.
-% The errors were corrected and code was further improved (made more efficient and robust for further analysis).
-% Bhanu %(Credits:Tejas K)
+% The skeleton of the code was taken from Mathworks.inc and the code was further improved by Tejas.K
+% Formulas for computing Hu's geometric moment invariant-based MCSI's were incorporated and further modified by Bhanu.M
 % August 2023
 
 
@@ -13,11 +12,12 @@ clc
 clear all
 close all
 
-%% Take the Input - image/audio/matrix/bag
+%% Take the Input - image set (Component images as well as the mult-component image in order).
+% Images are recommended to be grey scale. Works with RGB as well, but analysis fails with images having too many colors/ color gradient.
 
-folder1 = 'C:\Users\bhanu\OneDrive\Desktop\EMA 790_new-PT314-51s-71UU\Characterization of architectures\Matlab\Architecture plotting';
+folder1 = 'C:\Users\username\folder1\....'; %Select folder here
 filename1 = dir(fullfile(folder1,'*.jpg')); 
-I_one_vec = zeros(1,9); % Total number of images
+I_one_vec = zeros(1,9); % Total number of images ).
 CM_00 = zeros(1,length(I_one_vec));
 
 for q = 1:length(I_one_vec)
@@ -138,9 +138,5 @@ parameters = [Imca Imcc Dis];
 
 
 
-% the eight I_ values are the final Hu's moments obtained. These are the features of the image/ Audio that was given as input.
-% These features can be used to recognise this image during facerecognition/ copy move forgerydetection etc etc. 
-% The advantage is that, the entire matrix of elements are now reduced to 8 features which reduces computational cost.
-% Also we can apply log transform to all 8 moments and then add them to get one feature for the entire image/ audio signal.
 
 
