@@ -1,4 +1,6 @@
-
+%% Code for generating 2nd order fractal arrays.
+ 
+% To Create square space (2L x 2L) unit^2
 figure(1)
 
 L = 2500;
